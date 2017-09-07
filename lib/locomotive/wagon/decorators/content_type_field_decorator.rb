@@ -52,6 +52,10 @@ module Locomotive
         self[:ui_enabled]
       end
 
+      def searchable
+        self[:searchable]
+      end
+
       def select_options
         return nil if type.to_sym != :select || @persisted
 
